@@ -130,3 +130,20 @@ console.log(finalSum)
 
 /* List a persons' skills */
 
+function loopOverObj(obj) {
+    for (const prop in obj) {
+   
+            console.log(prop + ': ' + obj[prop])
+            
+        
+    }
+}
+
+let person = {
+    name: 'Carin',
+    age: 38,
+    city: 'Gothenburg',
+    skills: ['programming expert', 'Video game master', 'Pokemon Master', 'Kung Fu legend', 'Football Ninja']
+}
+
+loopOverObj(person)
