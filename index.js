@@ -55,3 +55,30 @@ console.log(greetingAgain('Carin', 'Wood'))
 
 /* Distance converter */
 
+function convert(km) {
+    return km * 0.621371;
+}
+
+let miles = convert(5)
+console.log(`5 kilometers is equal to ${miles} miles`)
+
+
+/* Temperature converter */
+
+function inFarenheit(celcius) {
+    return celcius * 9 / 5 + 32
+}
+
+let farenheit = inFarenheit(10)
+console.log("The temperature in farenheit is " +  farenheit)
+
+
+/* Mean Value */
+function meanValue(values) {
+    let sum = 0;
+    for (let i = 0; i < values.length; i++) {
+        sum += values[i]
+    }
+        return sum/values.length
+}
+
